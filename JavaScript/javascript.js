@@ -7,10 +7,17 @@ let S = 2*(long*height+height*width+width*long);
 console.log(S);
 // 2
 
+let n=24;
+a= n % 10;
+m =( n-a ) / 10;
+console.log(m+a);
+
+
 // 3
 let a = 4;
 let b = 7;
-a = a+1;
-b = b+1
+a = a+b;
+b = a-b;
+a=a-b;
 console.log(a);
 console.log(b);
