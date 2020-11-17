@@ -12,16 +12,18 @@ let sum = 3000;
 let result;
 if ( sum >= 1000 && sum < 2000){
    result = 'Скидка 5%';
+   sum = sum * 0,95;
 }  else if( sum >= 2000 && sum < 3000){
     result = 'Cкидка 10%';
+    sum = sum * 0,9;
 } else if ( sum >= 3000){
     result = 'Скидка 10% + подарок';
+    sum = sum * 0,9;
 }
 else {
     result = 'Скидка не предусмотрена';
 }
-console.log(result);
-
+console.log(`Сумма вашей покупки составит: ${sum},`, result);
 
 
  //  Задача на if else
